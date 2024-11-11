@@ -1,0 +1,19 @@
+.container {
+    width: 300px; /* ajuste conforme necessário */
+    height: 300px; /* ajuste conforme necessário */
+    position: relative;
+}
+
+.animada-imagem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animateImage 4s linear infinite; /* ajuste a duração e o tipo de animação conforme necessário */
+    justify-content: center;
+}
+
+@keyframes animateImage {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); } /* animação de escala */
+    100% { transform: scale(1); }
+}
